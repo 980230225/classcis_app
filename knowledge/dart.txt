@@ -1,0 +1,41 @@
+dart
+dart弱类型语言
+基本数据类型
+int string double bool
+
+double d1=1.11;
+d1=1
+d1 1.00
+
+常量
+final和const  修饰符
+const 值不变，声明时就要赋值
+final 可以先不赋值,声明变量后赋值
+
+判断数据类型
+var1.runtimeType
+
+dart命名规则
+1、变量名由字母、数字、下划线和美元符号组成。
+2、标识符开头不能是数字
+3、标识符不能是保留字和关键字
+4、区分大小写
+5、见名思意
+原样输出
+ var var1='''asdasd
+      a
+  ''';
+
+  print(var1);
+
+条件判断语句
+if() {
+}
+else{
+}
+
+数组集合
+list
+两种声明方式
+1、var list01=['var1','var2','var3'];
+2、var list02=new List();
