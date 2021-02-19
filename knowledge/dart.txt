@@ -1,7 +1,10 @@
 dart
 dart弱类型语言
 基本数据类型
-int string double bool
+number类型
+int double
+string
+ bool
 
 double d1=1.11;
 d1=1
@@ -11,6 +14,8 @@ d1 1.00
 final和const  修饰符
 const 值不变，声明时就要赋值
 final 可以先不赋值,声明变量后赋值
+
+List listDemo=const[1,2,3];
 
 判断数据类型
 var1.runtimeType
@@ -28,14 +33,50 @@ dart命名规则
 
   print(var1);
 
+运算符
+算术运算符
++ - * /  ~/(取整) %/(取余)
+关系运算符
+==  !=   >    <     >=      <=
+逻辑运算符
+!   &&   ||
+赋值运算符
+基础赋值运算符=  ??=
+复合赋值运算符+= -=  *=  /=  %= ~=
+
+  int i=10;
+  print("hello var i $i");
+  int dollars01=42;
+  int dollars=dollars01;
+  print("I have \$$dollars");// \&等价于$
+  print("I have \$$dollars");
+
+
 条件判断语句
 if() {
 }
 else{
 }
 
+
+
+break 跳出当前循环
+continue 结束当前循环语句，进入下一层循环。
+
+
 数组集合
 list
 两种声明方式
 1、var list01=['var1','var2','var3'];
 2、var list02=new List();
+list 的runtimeType是List<String>
+
+
+ List l1st03=[
+    {"cate": "国内", "news": [{"title": "国内新闻1"},{"title": "国内新闻2"},{"title": "国内新闻3"}]}
+    ,{"cate": "国外", "news": [{"title": "国外新闻1"},{"title": "国外新闻2"},{"title": "国外新闻3"}]}
+    ];
+  for(int i=0;i<l1st03.length;i++){
+    var value=l1st03[i];
+    print(value);
+  }
