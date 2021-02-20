@@ -80,3 +80,13 @@ list 的runtimeType是List<String>
     var value=l1st03[i];
     print(value);
   }
+
+  const修饰List
+
+ List listDemo=const[1,2,3];
+    listDemo.add(4);
+    print(listDemo.toString());
+    报错
+  Unsupported operation: Cannot add to an unmodifiable list
+  size = 3
+  4

@@ -43,4 +43,6 @@ void main(){
   // print("I have \$$dollars");// \&等价于$
   // print("I have \$$dollars");
     List listDemo=const[1,2,3];
+    listDemo.add(4);
+    print(listDemo.toString());
 }
