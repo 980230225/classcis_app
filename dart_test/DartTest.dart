@@ -42,5 +42,17 @@ void main(){
   // int dollars=dollars01;
   // print("I have \$$dollars");// \&等价于$
   // print("I have \$$dollars");
-    List listDemo=const[1,2,3];
+  //   List listDemo=final List();
+
+    List listDemo=const[1,2,4,5];
+    print(listDemo);
+    print(listDemo.last);
+    List listDemo02=new List(2);
+    Set s=new Set();
+    s.add(1);
+    s.add(2);
+    s.add(3);
+    s.add(4);
+    s.add(5);
+    print(s);
 }

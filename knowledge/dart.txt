@@ -68,8 +68,16 @@ continue 结束当前循环语句，进入下一层循环。
 list
 两种声明方式
 1、var list01=['var1','var2','var3'];
-2、var list02=new List();
-list 的runtimeType是List<String>
+List listDemo=const[1,2,3];
+正确List listDemo=new List();
+正确final List listDemo=new List();
+正确final  List listDemo=[];
+正确List listDemo=const[];
+
+2、var list02=new List(int);
+错误const listDemo=const List[];
+
+list 的runtimeType是List<数据类型>
 
 
  List l1st03=[
@@ -80,3 +88,6 @@ list 的runtimeType是List<String>
     var value=l1st03[i];
     print(value);
   }
+
+
+
