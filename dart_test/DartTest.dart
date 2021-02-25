@@ -42,17 +42,40 @@ void main(){
   // int dollars=dollars01;
   // print("I have \$$dollars");// \&等价于$
   // print("I have \$$dollars");
-  //   List listDemo=final List();
 
-    List listDemo=const[1,2,4,5];
-    print(listDemo);
-    print(listDemo.last);
-    List listDemo02=new List(2);
-    Set s=new Set();
-    s.add(1);
-    s.add(2);
-    s.add(3);
-    s.add(4);
-    s.add(5);
-    print(s);
+    // List
+    // List listDemo=new List();
+    // List ListDemo=const[1,2,4,5];
+    // print(ListDemo);
+    // print(ListDemo.last);
+    // List ListDemo02=new List(2);
+    // Set s=new Set();
+    // s.add(1);
+    // s.add(2);
+    // s.add(3);
+    // s.add(4);
+    // s.add(5);
+    // print(s);
+    // List ListDemo03=const[1,2,4,5];
+    // bool b;
+    // if(ListDemo==ListDemo03){
+    //     b=true;
+    // }else{
+    //     b=false;
+    // }
+    // print("ListDemo equals ListDemo03$b");
+    test t1=new test();
+    print(t1.toString());
+    print(t1.runtimeType);
+}
+class test {
+    var name;
+    test(){
+        name="shida";
+    }
+    @override
+  String toString() {
+    // TODO: implement toString
+    return this.name;
+  }
 }
