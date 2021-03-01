@@ -32,6 +32,9 @@ dart命名规则
   ''';
 
   print(var1);
+使用 r 前缀，可以创建 “原始 raw” 字符串：
+
+var s = r"In a raw string, even \n isn't special.";
 
 运算符
 算术运算符

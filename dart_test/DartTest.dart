@@ -67,6 +67,8 @@ void main(){
     test t1=new test();
     print(t1.toString());
     print(t1.runtimeType);
+    var t2;
+    assert(t2!=null);
 }
 class test {
     var name;
