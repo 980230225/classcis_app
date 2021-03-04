@@ -1,4 +1,6 @@
 
+import 'dart:math';
+
 void main(){
   // var var1=1;
   // var var2='var2';
@@ -114,9 +116,29 @@ void main(){
     int var1=1;
     return var1;
   }
+  getList(){
+      return [1,2,3,4,5,6,7];
+  }
+    printUserInfo(String name,int age){
+      return "name is $name age is $age";
+    }
   var v1=method();
     print(v1);
+  var list01=getList();
+  print(list01);
 
+  list01.forEach((element)=>{
+      print(element)
+  });
+  list01.forEach((element) {
+      print(element);
+  print(element);
+  });
+
+
+  print(list01.runtimeType);
+  var doprint=printUserInfo("shida",25);
+    print(doprint);
 }
 
 class test {
