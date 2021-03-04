@@ -1,3 +1,4 @@
+
 void main(){
   // var var1=1;
   // var var2='var2';
@@ -43,33 +44,81 @@ void main(){
   // print("I have \$$dollars");// \&等价于$
   // print("I have \$$dollars");
 
-    // List
-    // List listDemo=new List();
-    // List ListDemo=const[1,2,4,5];
-    // print(ListDemo);
-    // print(ListDemo.last);
-    // List ListDemo02=new List(2);
-    // Set s=new Set();
-    // s.add(1);
-    // s.add(2);
-    // s.add(3);
-    // s.add(4);
-    // s.add(5);
-    // print(s);
-    // List ListDemo03=const[1,2,4,5];
-    // bool b;
-    // if(ListDemo==ListDemo03){
-    //     b=true;
-    // }else{
-    //     b=false;
-    // }
-    // print("ListDemo equals ListDemo03$b");
-    test t1=new test();
-    print(t1.toString());
-    print(t1.runtimeType);
-    var t2;
-    assert(t2!=null);
+  // List
+  // List listDemo=new List();
+  // List ListDemo=const[1,2,4,5];
+  // print(ListDemo);
+  // print(ListDemo.last);
+  // List ListDemo02=new List(2);
+  // Set s=new Set();
+  // s.add(1);
+  // s.add(2);
+  // s.add(3);
+  // s.add(4);
+  // s.add(5);
+  // print(s);
+  // List ListDemo03=const[1,2,4,5];
+  // bool b;
+  // if(ListDemo==ListDemo03){
+  //     b=true;
+  // }else{
+  //     b=false;
+  // }
+  // print("ListDemo equals ListDemo03$b");
+
+
+  // test t1=new test();
+  // print(t1.toString());
+  // print(t1.runtimeType);
+
+  // var t2;
+  // assert(t2!=null);
+  // assert(false);
+
+  // int v1;
+  // v1 ??= 1024;
+  // print(v1);
+  //
+  // var i1=0;
+  // do{
+  //   i1++;
+  //   print(i1);
+  //   if(i1==100){break;}
+  // }while(true);
+  // int i2=0;
+  // while(true){
+  //   i2++;
+  //   print(i2);
+  //   if(i2==100){
+  //     break;
+  //   }
+  // }
+  //
+  // for(int i=0;i<=100;i++){
+  //   print(i);
+  // }
+  // var var1;
+  // switch(var1){
+  //   case "男" :
+  //     print("性别施男");
+  //     break;
+  //   case "女" :
+  //     print("性别施女");
+  //     break;
+  //   default:
+  //     print("变性人");
+  //     break;
+  // }
+
+  int method(){
+    int var1=1;
+    return var1;
+  }
+  var v1=method();
+    print(v1);
+
 }
+
 class test {
     var name;
     test(){
