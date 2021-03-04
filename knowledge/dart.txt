@@ -134,6 +134,18 @@ List方法
 
 
 
+箭头函数/箭头方法写法
+  list01.forEach((element) =>{
+      print(element)
+  });
+
+正常写法
+  list01.forEach((element) {
+      print(element);
+  print(element);
+  });
+
+
 
 
 
