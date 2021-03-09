@@ -119,9 +119,7 @@ void main(){
   getList(){
       return [1,2,3,4,5,6,7];
   }
-    printUserInfo(String name,int age){
-      return "name is $name age is $age";
-    }
+
   var v1=method();
     print(v1);
   var list01=getList();
@@ -134,11 +132,16 @@ void main(){
       print(element);
   print(element);
   });
-
-
   print(list01.runtimeType);
+
+  printUserInfo(String name,int age){
+    return "name is $name age is $age";
+  }
   var doprint=printUserInfo("shida",25);
     print(doprint);
+
+
+
 }
 
 class test {
