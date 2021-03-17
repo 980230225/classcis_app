@@ -1,5 +1,4 @@
 
-import 'dart:math';
 
 void main(){
   // var var1=1;
@@ -112,38 +111,95 @@ void main(){
   //     break;
   // }
 
-  int method(){
-    int var1=1;
-    return var1;
-  }
-  getList(){
-      return [1,2,3,4,5,6,7];
-  }
+  // int method(){
+  //   int var1=1;
+  //   return var1;
+  // }
+  // getList(){
+  //     return [1,2,3,4,5,6,7];
+  // }
+  //
+  // var v1=method();
+  //   print(v1);
+  // var list01=getList();
+  // print(list01);
 
-  var v1=method();
-    print(v1);
-  var list01=getList();
-  print(list01);
-
-  list01.forEach((element)=>{
-      print(element)
-  });
-  list01.forEach((element) {
-      print(element);
-  print(element);
-  });
-  print(list01.runtimeType);
+  // //箭头函数
+  // list01.forEach((element)=>{
+  //     print(element)
+  // });
+  // list01.forEach((element) {
+  //     print(element);
+  // print(element);
+  // });
+  // print(list01.runtimeType);
 
 
-  printUserInfo(String name,int age){
-    return "name is $name age is $age";
-  }
-  var doprint=printUserInfo("shida",25);
-    print(doprint);
+  // printUserInfo(String name,int age){
+  //   return "name is $name age is $age";
+  // }
+  // var doprint=printUserInfo("shida",25);
+  //   print(doprint);
+  //   print(doprint.runtimeType);
 
-print("20210310");
+
+
+    // //方法内的方法调用
+    // void methodTest(){
+    //   print("run");
+    //   aaaInmethodTest(){
+    //     print("aaaInmethodTest");
+    //
+    //   }
+    //   aaaInmethodTest();
+    //  }
+    // methodTest();
+    // print("$method().runtimeType");
+
+    // fn1(){
+    //   print("this is fn1");
+    // }
+    // fn2(fn){
+    //   fn();
+    // }
+    // fn2(fn1());
+
+
+
+    // var zn3=(){
+    //   print("这是一个匿名方法");
+    // };
+    // zn3.call();
+     var aa=a();
+     aa();
+
+
+
+
+
+
+
 
 }
+a(){
+  int avalue=0;
+  amethod(){
+    avalue++;
+    print("$avalue");
+  }
+  return avalue;
+}
+b() {
+  int bvalue = 0;
+  // amethod(){
+  //   bvalue++;
+  //   print("$bvalue");
+  // }
+  return () {
+    print(++bvalue);};
+}
+
+
 
 class test {
     var name;
