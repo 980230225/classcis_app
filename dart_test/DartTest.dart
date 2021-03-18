@@ -170,17 +170,32 @@ void main(){
     //   print("这是一个匿名方法");
     // };
     // zn3.call();
-     var aa=a();
-     aa();
 
+    // 闭包
+    //  var aa=a();
+    //  aa();
 
-
+  // 默认参数
+    var result01=methodDefaultValue();
+    print(result01);
+    var str1=2;
+    var str2=1;
+    var result02=methodDefaultValue(str1: 's1',str2: 's1');
+    print(result02);
 
 
 
 
 
 }
+
+
+
+methodDefaultValue({String str1='str1',String str2='str2'}){
+  return str1+str2;
+}
+
+//闭包   闭包方法(类)返回方法   去赋值var 变量   如 var  var1=a();  >>  var var1=amethod(){ avalue++; print("$avalue");}   var1();>> 调用 amethod()方法;
 a(){
   int avalue=0;
   amethod(){

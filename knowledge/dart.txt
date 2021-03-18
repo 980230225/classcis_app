@@ -173,6 +173,8 @@ List方法
      zn3.call();
 
 
+
+    //闭包   闭包方法(类)返回方法   去赋值var 变量   如 var  var1=a();  >>  var var1=amethod(){ avalue++; print("$avalue");}   var1();>> 调用 amethod()方法;
     闭包
     void main() {
       var i=0;
@@ -215,3 +217,34 @@ List方法
         print(--count);
       };
     }
+
+
+    默认参数值
+    默认值只能是编译时常量 。在定义方法的时候，可以用 = 来定义可选参数的默认值。 如果没有提供默认值，那么默认值为 null。
+
+    下面是设置可选参数默认值示例：
+
+    /// 设置 [bold] 和 [hidden] 标志 ...
+    void enableFlags({bool bold = false, bool hidden = false}) {...}
+
+    // bold 值为 true; hidden 值为 false.
+    enableFlags(bold: true);
+
+
+      默认参数
+      调用方法赋值
+        var result01=methodDefaultValue();
+                   print(result01);
+                   var str1=2;
+                   var str2=1;
+                   var result02=methodDefaultValue(str1: 's1',str2: 's1');
+                   //methodDefaultValue(str1: 's1',str2: 's1','str3');会报错
+                   print(result02);
+        方法
+        methodDefaultValue({String str1='str1',String str2='str2'}){
+          return str1+str2;
+        }
+
+
+
+
