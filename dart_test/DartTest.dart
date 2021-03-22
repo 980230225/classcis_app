@@ -175,14 +175,15 @@ void main(){
     //  var aa=a();
     //  aa();
 
-  // 默认参数
-    var result01=methodDefaultValue();
-    print(result01);
-    var str1=2;
-    var str2=1;
-    var result02=methodDefaultValue(str1: 's1',str2: 's1');
-    print(result02);
+  // 方法的默认参数
+  //   var result01=methodDefaultValue();
+  //   print(result01);
+  //   var str1=2;
+  //   var str2=1;
+  //   var result02=methodDefaultValue(str1: 's1',str2: 's1');
+  //   print(result02);s
 
+  //
 
 
 
